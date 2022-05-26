@@ -10,12 +10,14 @@ public class Prenda {
   private Color colorPrincipal;
   private Color colorSecundario;
 
-  public Prenda(TipoPrenda tipo, Material material, Trama trama, Color colorPrincipal, Color colorSecundario ) {
-    this.tipo = tipo;
-    this.material = material;
-    this.trama = trama;
-    this.colorPrincipal = colorPrincipal;
-    this.colorSecundario = colorSecundario;
+  public static Prenda crearNuevaPrenda(TipoPrenda tipo, Material material, Trama trama, Color colorPrincipal, Color colorSecundario ) {
+    Prenda prenda = new Prenda();
+    prenda.tipo = tipo;
+    prenda.material = material;
+    prenda.trama = trama;
+    prenda.colorPrincipal = colorPrincipal;
+    prenda.colorSecundario = colorSecundario;
+    return prenda;
   }
 
   public TipoPrenda getTipo(){

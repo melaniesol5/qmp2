@@ -9,8 +9,10 @@ import java.util.List;
 public class Uniforme {
   private List<Prenda> prendas = new ArrayList<>();
 
-  public Uniforme(List<Prenda> prendas){
-    this.prendas = prendas;
+  public static Uniforme crearNuevoUniforme(List<Prenda> prendas){
+    Uniforme uniforme = new Uniforme();
+    uniforme.prendas = prendas;
+    return uniforme;
   }
   public List<Prenda> getPrendas() {
     return prendas;

@@ -40,6 +40,6 @@ public class Borrador {
   }
   public Prenda crearPrenda() {
     this.validarPrenda();
-    return new Prenda(tipo, material, trama, colorPrincipal,colorSecundario);
+    return Prenda.crearNuevaPrenda(tipo, material, trama, colorPrincipal,colorSecundario);
   }
 }

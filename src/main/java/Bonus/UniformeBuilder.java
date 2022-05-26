@@ -20,7 +20,7 @@ public class UniformeBuilder {
     if(!this.validarUniforme()) {
       throw new UniformeInvalidoException("No se ha podido crear el uniforme.");
     }
-    return new Uniforme(this.prendas);
+    return Uniforme.crearNuevoUniforme(this.prendas);
   }
 
   private Boolean validarUniforme() {
